@@ -34,6 +34,10 @@ export const Route = createRootRoute({
       { name: "author", content: "Joice Emiliano" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "RPV - Rota da Primeira Venda" },
+      { name: "twitter:title", content: "RPV - Rota da Primeira Venda" },
+      { property: "og:description", content: "Venda seu primeiro produto digital da beleza em até 7 dias." },
+      { name: "twitter:description", content: "Venda seu primeiro produto digital da beleza em até 7 dias." },
     ],
     links: [
       {
