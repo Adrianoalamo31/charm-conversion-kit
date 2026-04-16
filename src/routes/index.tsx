@@ -38,7 +38,7 @@ function Index() {
       <HeroSection />
       <DiscoverSection />
       <ProofsSection />
-      <MethodSection />
+      
       <ForWhoSection />
       <ProductSection />
       <IsaSection />
