@@ -1,26 +1,52 @@
 import { createFileRoute } from "@tanstack/react-router";
+import HeroSection from "../components/rpv/HeroSection";
+import DiscoverSection from "../components/rpv/DiscoverSection";
+import ProofsSection from "../components/rpv/ProofsSection";
+import MethodSection from "../components/rpv/MethodSection";
+import ForWhoSection from "../components/rpv/ForWhoSection";
+import ProductSection from "../components/rpv/ProductSection";
+import IsaSection from "../components/rpv/IsaSection";
+import BonusSection from "../components/rpv/BonusSection";
+import OfferSection from "../components/rpv/OfferSection";
+import AuthoritySection from "../components/rpv/AuthoritySection";
+import FaqSection from "../components/rpv/FaqSection";
+import WhatsAppButton from "../components/rpv/WhatsAppButton";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "RPV - Rota da Primeira Venda para Profissionais da Beleza" },
+      {
+        name: "description",
+        content:
+          "Venda seu primeiro produto digital da beleza em até 7 dias. Método prático para profissionais da beleza que querem crescer no digital.",
+      },
+      { property: "og:title", content: "RPV - Rota da Primeira Venda para Profissionais da Beleza" },
+      {
+        property: "og:description",
+        content:
+          "Venda seu primeiro produto digital da beleza em até 7 dias — mesmo sem muitos seguidores.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <>
+      <HeroSection />
+      <DiscoverSection />
+      <ProofsSection />
+      <MethodSection />
+      <ForWhoSection />
+      <ProductSection />
+      <IsaSection />
+      <BonusSection />
+      <OfferSection />
+      <AuthoritySection />
+      <FaqSection />
+      <WhatsAppButton />
+    </>
+  );
 }
