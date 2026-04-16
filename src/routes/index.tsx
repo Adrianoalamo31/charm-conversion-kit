@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import HeroSection from "../components/rpv/HeroSection";
 import DiscoverSection from "../components/rpv/DiscoverSection";
 import ProofsSection from "../components/rpv/ProofsSection";
-import MethodSection from "../components/rpv/MethodSection";
+
 import ForWhoSection from "../components/rpv/ForWhoSection";
 import ProductSection from "../components/rpv/ProductSection";
 import IsaSection from "../components/rpv/IsaSection";
@@ -38,7 +38,7 @@ function Index() {
       <HeroSection />
       <DiscoverSection />
       <ProofsSection />
-      <MethodSection />
+      
       <ForWhoSection />
       <ProductSection />
       <IsaSection />
